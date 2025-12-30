@@ -1,4 +1,7 @@
-import audioop
+try: 
+     import audioop 
+ except ImportError: 
+     import pyaudioop as audioop 
 import hashlib
 import io
 import json
